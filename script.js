@@ -57,4 +57,5 @@ const init = async () => {
   displayRepositories(repositories);
 };
 
-init();
+const search = document.querySelector("#search-button");
+search.addEventListener("click", init);
